@@ -1,0 +1,86 @@
+@media only screen and (max-width: 800px) {
+  body {
+    display: flex; }
+
+  .appointmentWrapInner .appointmentLeftContent .appUp {
+    flex-direction: column;
+    justify-content: flex-start; }
+    .appointmentWrapInner .appointmentLeftContent .appUp a {
+      position: static;
+      margin-left: 20px; }
+    .appointmentWrapInner .appointmentLeftContent .appUp .upper {
+      display: flex;
+      order: -1;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid grey; }
+
+  nav .menuSelection {
+    flex-direction: column; }
+    nav .menuSelection .menu {
+      border-radius: 0;
+      flex-direction: row;
+      justify-content: flex-start;
+      display: none;
+      background-color: aliceblue !important; }
+      nav .menuSelection .menu p {
+        color: black !important; }
+      nav .menuSelection .menu img {
+        margin-right: 20px; }
+      nav .menuSelection .menu img:last-child {
+        position: absolute;
+        right: 10px; }
+  nav .showMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+
+  .active img:last-child {
+    display: inline-block !important; }
+
+  header .headerContentRight .menuSmallIcon {
+    display: flex; }
+  header .headerContentRight .heroSelection {
+    display: none; }
+
+  .appointmentWrapInner .appointmentRightContainer {
+    width: 0%;
+    margin: 0; }
+  .appointmentWrapInner .appointmentRight {
+    display: none; }
+  .appointmentWrapInner .offerContainer {
+    display: none; }
+  .appointmentWrapInner .appointmentLeft {
+    width: 100%; }
+
+  footer {
+    display: none; }
+
+  section .appointmetMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    section .appointmetMenu h1 {
+      display: none; }
+    section .appointmetMenu .textNav {
+      width: 100%; }
+    section .appointmetMenu .picNavMenu {
+      position: static;
+      margin: 0 auto; }
+    section .appointmetMenu .buttonBlue {
+      max-width: 300px;
+      margin: 10px; } }
+@media only screen and (min-width: 801px) {
+  .menu {
+    display: flex !important; }
+
+  .smallMenuSidebar {
+    display: none !important; }
+
+  .headerContentLeft {
+    display: inline-flex !important; } }
+
+/*# sourceMappingURL=media%20queries.css.map */

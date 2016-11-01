@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Marko Zelenbaba zadatak VegaIT</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="resourses/css/normalise.css">
+    <link rel="stylesheet" type="text/css" href="resourses/css/main.css">
+    <link rel="stylesheet" type="text/css" href="resourses/css/media%20queries.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="resourses/js/angular.min.js"></script>
+    <script src="resourses/js/Angular-route.js"></script>
+    <script src="resourses/js/scriptAngular.js"></script>
+    <script src="resourses/js/script.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <div class="main_wraper">
+        <header>
+            <div class="headerContentLeft">
+                <div class="logoContainer">
+                    <p>::</p>
+                </div>
+                <p class="logoText">Company Logo</p>
+            </div>
+            <div class="headerContentRight">
+                <a class="bell">
+                    <div class="bellContainer"> <img class="bell" src="resourses/images/bell.png" alt="bell"> </div>
+                </a>
+                <div class="heroSelection">
+                    <div class="arrowContainer">
+                        <a class="userMenu" href="#"><img class="arrow" src="resourses/images/arrow.png" alt="arrow"></a>
+                        <div class="arrowPopUp" tabindex="-1"> <a href="#">Home</a> <a href="#">My profile</a> <a href="#">Help centre</a> <a href="#">Take a tour</a> <a href="#">Invite a friend</a> <a href="#">Log out</a> </div>
+                    </div>
+                    <a class="userMenu" href="#">
+                        <p>Daniel</p>
+                    </a>
+                    <a class="userMenu" href="#"><img class="user" src="resourses/images/user.png" alt="user"></a>
+                </div>
+                <div class="menuSmallIcon"> <span></span> <span></span> <span></span> </div>
+            </div>
+        </header>
+        <div class="main_content">
+            <nav class="row">
+                <div class="showMenu">
+                    <p class="showMenuText">Appointments</p> <img src="resourses/images/arrow-orange.png" alt="orange arrow"> </div>
+                <div class="menuSelection">
+                    <a href="#/" class="menu active appointment"> <img src="resourses/images/nav/appointments.png" alt="appointments">
+                        <p>Appoinments</p> <img class="checked" src="resourses/images/checked.png" alt="checked"> </a>
+                    <a href="#prescription" class="menu"> <img src="resourses/images/nav/prescription.png" alt="icon">
+                        <p>Prescription</p> <img src="resourses/images/checked.png" alt="checked"> </a>
+                    <a href="#health tracking" class="menu"> <img src="resourses/images/nav/health%20tracking.png" alt="icon">
+                        <p>Health Tracking</p> <img src="resourses/images/checked.png" alt="checked"> </a>
+                    <a href="#uploads" class="menu"> <img src="resourses/images/nav/uploads.png" alt="icon">
+                        <p>Uploads</p> <img src="resourses/images/checked.png" alt="checked"> </a>
+                    <a href="#medical history" class="menu"> <img src="resourses/images/nav/medical%20history.png" alt="icon">
+                        <p>Medical History</p> <img src="resourses/images/checked.png" alt="checked"> </a>
+                </div>
+            </nav>
+            <section>
+                <div class="ngIf">
+                    <div ng-view></div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="upper">
+                <div class="left">
+                    <div class="logoContainer">
+                        <p>::</p>
+                    </div>
+                    <p class="logoText">Company Logo</p>
+                </div>
+                <div class="right">
+                    <div class="one">
+                        <h3>company</h3> <a>How it Works</a> <a>About Us</a> <a>Our Doctors</a> <a>For Business</a> <a>Contact Us</a> </div>
+                    <div class="two">
+                        <h3>service</h3> <a>Home</a> <a>My Profile</a> <a>Help Centre</a> </div>
+                    <div class="three">
+                        <h3>downloads</h3>
+                        <a><img src="resourses/images/appstore.png" alt="appStore"></a>
+                        <a><img src="resourses/images/google.png" alt="Google"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="lower">
+                <p> &#174;2016 Company Ltd.</p> <a>Terms and conditions</a> <a>Privacy</a> <img src="resourses/images/carequality.png" alt="logo"> </div>
+        </footer>
+    </div>
+    <div class="smallMenuSidebar" tabindex="-1">
+        <div class="smallMenuOne menuSidebar">
+            <div class="profileInfo"> <img class="profilePic" src="resourses/images/profile.jpg" alt="profilePic">
+                <h3 class="firstName">Daniel</h3> </div>
+            <a class="profileSelector">
+                <div class="swichProfileSelection">
+                    <div class="left"> <img src="resourses/images/switchplp.png" alt="switch">
+                        <p>Switch profile</p>
+                    </div>
+                    <div class="right"> <img class="arrowUser" src="resourses/images/arrowUp%20user.png" alt="arrow"> </div>
+                </div>
+            </a>
+            <div class="profilesAvailable" tabindex="-1">
+                <div class="user"> <img src="resourses/images/user%20selection.png" alt="user">
+                    <p>Daniel Jones</p>
+                </div>
+                <div class="user"> <img src="resourses/images/user%20selection.png" alt="user">
+                    <p>Sarah Jones</p>
+                </div>
+                <div class="user"> <img src="resourses/images/user%20selection.png" alt="user">
+                    <p>Alice Jones</p>
+                </div>
+            </div>
+            <a class="buttonBlue">
+                <p>Book an appointment</p> <img src="resourses/images/arrow.png" alt="arrow"> </a>
+        </div>
+        <div class="smallMenuTwo menuSidebar">
+            <div class="arrowPopUp" tabindex="-1"> <a href="#">Home</a> <a href="#">My profile</a> <a href="#">Help centre</a> <a href="#">Take a tour</a> <a href="#">Invite a friend</a> <a href="#">Log out</a> </div>
+        </div>
+        <div class="smallMenuThree menuSidebar">
+            <div class="one">
+                <h3>company</h3> <a>How it Works</a> <a>About Us</a> <a>Our Doctors</a> <a>For Business</a> <a>Contact Us</a> <a>Legal</a> </div>
+        </div>
+        <div class="smallMenuFour menuSidebar">
+            <div class="upperFour">
+                <a><img src="resourses/images/appstore.png" alt="appStore"></a>
+                <a><img src="resourses/images/google.png" alt="Google"></a>
+            </div>
+            <div class="lowerFour">
+                <p> &#174;2016 Company Ltd.</p> <img src="resourses/images/carequality.png"> </div>
+        </div>
+    </div>
+    <div class="boxVoucher">
+        <div class="addVoucherContent">
+            <div class="upper">
+                <h2>Add voucher</h2>
+                <a><img id="closeVoucher" src="resourses/images/x.png" alt="close voucher"></a>
+            </div>
+            <div class="lower">
+                <p>An eram tamen multos laborum, do cernantur despicationes. Ne an praesentibus, dolor iis fabulas e tamen aut labore o expetendis, veniam tempor transferrem, singulis magna o mentitum relinqueret, ipsum cohaerescant excepteur varias laborum ab fore ad doctrina an lorem te malis ea a elit officia. Malis consectetur commodo eram doctrina ita cernantur labore offendit. </p>
+                <form> Voucher code
+                    <input type="text" name="FirstName" value="Enter voucher code...">
+                    <br> </form>
+            </div> <a class="buttonBlue">Submit voucher code</a> </div>
+    </div>
+</body>
+
+</html>
