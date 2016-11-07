@@ -15,8 +15,8 @@
     <script src="resourses/js/script.js"></script>
 </head>
 
-<body ng-app="myApp">
-    <div class="main_wraper">
+<body data-ng-app="myApp">
+    <div class="mainWraper">
         <header>
             <div class="headerContentLeft">
                 <div class="logoContainer">
@@ -50,17 +50,17 @@
                         <p>Appoinments</p> <img class="checked" src="resourses/images/checked.png" alt="checked"> </a>
                     <a href="#prescription" class="menu"> <img src="resourses/images/nav/prescription.png" alt="icon">
                         <p>Prescription</p> <img src="resourses/images/checked.png" alt="checked"> </a>
-                    <a href="#health tracking" class="menu"> <img src="resourses/images/nav/health%20tracking.png" alt="icon">
+                    <a href="#healthtracking" class="menu"> <img src="resourses/images/nav/health%20tracking.png" alt="icon">
                         <p>Health Tracking</p> <img src="resourses/images/checked.png" alt="checked"> </a>
                     <a href="#uploads" class="menu"> <img src="resourses/images/nav/uploads.png" alt="icon">
                         <p>Uploads</p> <img src="resourses/images/checked.png" alt="checked"> </a>
-                    <a href="#medical history" class="menu"> <img src="resourses/images/nav/medical%20history.png" alt="icon">
+                    <a href="#medicalhistory" class="menu"> <img src="resourses/images/nav/medical%20history.png" alt="icon">
                         <p>Medical History</p> <img src="resourses/images/checked.png" alt="checked"> </a>
                 </div>
             </nav>
             <section>
                 <div class="ngIf">
-                    <div ng-view></div>
+                    <div data-ng-view></div>
                 </div>
             </section>
         </div>
@@ -127,7 +127,7 @@
                 <a><img src="resourses/images/google.png" alt="Google"></a>
             </div>
             <div class="lowerFour">
-                <p> &#174;2016 Company Ltd.</p> <img src="resourses/images/carequality.png"> </div>
+                <p> &#174;2016 Company Ltd.</p> <img src="resourses/images/carequality.png" alt="logo"> </div>
         </div>
     </div>
     <div class="boxVoucher">
